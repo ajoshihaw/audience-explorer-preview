@@ -491,13 +491,13 @@ footer .wrap{display:grid;gap:10px}
       <nav class="nav" id="nav" aria-label="Chapters">
         <span class="ind" id="ind"></span>
         <a href="#overview">Overview</a>
+        <a href="#buyable">Making it buyable</a>
         <a href="#demographics">Demographics</a>
         <a href="#geography">Geography</a>
         <a href="#media">Media</a>
         <a href="#psychographics">Psychographics</a>
         <a href="#personas">Personas</a>
         <a href="#day">Day in the life</a>
-        <a href="#buyable">Making it buyable</a>
       </nav>
     </div>
     <div class="lens" role="group" aria-label="Audience lenses">
@@ -529,157 +529,12 @@ footer .wrap{display:grid;gap:10px}
   </div>
 </section>
 
-<!-- 01 DEMOGRAPHICS -->
-<section class="chap" id="demographics">
-  <div class="wrap">
-    <div class="chap-head">
-      <div><span class="chap-num">01 · Demographics</span><h2>Mid-life to retirement, settled and better off than average</h2></div>
-      <p id="demoLede"></p>
-    </div>
-    <div class="grid g12">
-      <div class="card s6" data-demo="cAge"><div class="card-h"><div><h3>Age</h3><p class="sub"></p></div></div><div id="cAge"></div></div>
-      <div class="card s6" data-demo="cHhi"><div class="card-h"><div><h3>Household income</h3><p class="sub"></p></div></div><div id="cHhi"></div></div>
-      <div class="card s6" data-demo="cNw"><div class="card-h"><div><h3>Household net worth</h3><p class="sub"></p></div></div><div id="cNw"></div></div>
-      <div class="card s6" data-demo="cFace"><div class="card-h"><div><h3>Total life-insurance coverage</h3><p class="sub"></p></div></div><div id="cFace"></div><div class="sowhat" id="swFace"></div></div>
-      <div class="card s6" data-demo="cTiles"><div class="card-h"><div><h3>Life stage at a glance</h3><p class="sub"></p></div></div><div id="cTiles"></div></div>
-      <div class="card s6" data-demo="cRegion,cCounty"><div class="card-h"><div><h3>Where they live</h3><p class="sub"></p></div></div><div id="cRegion"></div><h4 class="note" style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin-top:4px">County size</h4><div id="cCounty"></div></div>
-      <div class="card s6" data-demo="cGender"><div class="card-h"><div><h3>Gender</h3><p class="sub"></p></div></div><div id="cGender"></div></div>
-      <div class="card s6" data-demo="cHome"><div class="card-h"><div><h3>Value of owned home</h3><p class="sub"></p></div></div><div id="cHome"></div></div>
-      <div class="card s12"><div class="card-h"><div><h3>Each product has its own footprint</h3><p class="sub">From Lighthouse's RFP Q&amp;A (Q8), not MRI. Plan each product against its own state list.</p></div></div>
-        <div class="grid g3">
-          <div class="so"><b>Life settlements · Life door</b>43 states, about 90% of the U.S. population. Excluded: AK, KS, NE, NH, ND, VT, WV. On-target lead: insured 65+ with $250K+ face value.</div>
-          <div class="so"><b>Home equity investment · both doors</b>22 jurisdictions, about 163M people. No minimum age; qualifies on home value, equity, 680+ credit and a $70K minimum investment.</div>
-          <div class="so"><b>Proprietary reverse mortgage · Home door</b>Florida and Arizona at launch (about 9% of the population), California next. Age 55+, enough equity for a $300K–$400K loan. FHA/HECM (62+) carries no paid media at launch.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 02 GEOGRAPHY -->
-<section class="chap geo" id="geography">
-  <div class="wrap">
-    <div class="chap-head">
-      <div><span class="chap-num">02 · Geography</span><h2>Where both doors over-index at once</h2></div>
-      <p id="geoLede">Each state is colored by two indexes at once: the Life door cut across, the Home door cut up. Switch either cut in the bar at the top; any of the 11 audience cuts works. Hover a state for the numbers, click it to pin it, and hover a legend square to find every state in that box.</p>
-    </div>
-    <div class="geo-ctrl">
-      <div class="seg dark" role="group" aria-label="Map view" id="gMode"><button aria-pressed="true" data-v="both">Both doors</button><button aria-pressed="false" data-v="life">Life door only</button><button aria-pressed="false" data-v="home">Home door only</button></div>
-      <div class="seg dark" role="group" aria-label="Geography level" id="gLevel"><button aria-pressed="true" data-v="group">MRI state groups (steadier)</button><button aria-pressed="false" data-v="state">Individual states</button></div>
-      <label class="geo-sel" for="gFoot">Product footprint
-        <select id="gFoot"><option value="all">All states</option><option value="ls">Life settlement: 43 states</option><option value="hei">Home equity investment: 22 jurisdictions</option><option value="prm">Proprietary reverse mortgage: FL + AZ</option></select></label>
-    </div>
-    <div class="geo-grid">
-      <div class="geo-map">
-        <svg id="gMap" viewBox="0 0 975 610" role="img" aria-label="U.S. map of audience indexes by state"></svg>
-        <p class="geo-note" id="gNote"></p>
-      </div>
-      <aside class="geo-side">
-        <div class="gcard" id="gLegend"></div>
-        <div class="gcard" id="gDetail"></div>
-      </aside>
-    </div>
-    <div class="geo-ranks" id="gRanks"></div>
-  </div>
-</section>
-
-<!-- 03 MEDIA -->
-<section class="chap alt" id="media">
-  <div class="wrap">
-    <div class="chap-head">
-      <div><span class="chap-num">03 · Media usage</span><h2>Evening TV carries them; heavy social use doesn't</h2></div>
-      <p id="mediaLede"></p>
-    </div>
-    <div class="grid g12">
-      <div class="card s12">
-        <div class="card-h"><div><h3>Media quintiles</h3><p class="sub">U.S. adults are ranked by time spent with each medium and split into fifths (I = heaviest 20%). Cells show each audience's index in that fifth. Daytime TV is split into thirds.</p></div></div>
-        <div class="heat-key"><span>Under-index</span><span class="g"></span><span>Over-index</span><span>(100 = U.S. adults)</span></div>
-        <div class="grid g2"><div class="heat-wrap"><div class="rank-h"><span class="dot life" style="width:10px;height:10px;border-radius:50%"></span><span id="qLifeName"></span></div><table class="heat" id="qLife"></table></div>
-          <div class="heat-wrap"><div class="rank-h"><span class="dot home" style="width:10px;height:10px;border-radius:50%"></span><span id="qHomeName"></span></div><table class="heat" id="qHome"></table></div></div>
-        <div class="sowhat" id="swQuint"></div>
-      </div>
-      <div class="card s7"><div class="card-h"><div><h3>When they watch TV</h3><p class="sub">Share watching TV in each weekday daypart (Eastern/Pacific times)</p></div></div><div id="cDay"></div><div class="sowhat" id="swDay"></div></div>
-      <div class="card s5"><div><h3>Live or on demand</h3><p class="sub">How they mostly watch TV in a typical week</p></div><div id="cLive"></div><div><h3 style="font-size:14px;margin-top:6px">Weekend TV</h3><p class="sub">Share watching in each weekend daypart</p></div><div id="cWknd"></div></div>
-      <div class="card s12">
-        <div class="card-h"><div><h3>TV networks they over-index on</h3><p class="sub">Watched in the last 7 days. Networks reaching at least 8% of the audience with 50+ respondents.</p></div>
-          <div class="seg" role="group" aria-label="Rank networks by"><button aria-pressed="true" data-rk="idx">Rank by index</button><button aria-pressed="false" data-rk="vp">Rank by reach</button></div></div>
-        <div class="grid g2"><div class="life"><div class="rank-h"><span class="dot life" style="width:10px;height:10px;border-radius:50%"></span>Life door</div><div class="rank" id="rnLife"></div></div><div class="home"><div class="rank-h"><span class="dot home" style="width:10px;height:10px;border-radius:50%"></span>Home door</div><div class="rank" id="rnHome"></div></div></div>
-      </div>
-      <div class="card s6"><div><h3>Streaming services</h3><p class="sub">Watched in the last 30 days. FAST = free ad-supported streaming.</p></div><div id="cStream"></div></div>
-      <div class="card s6"><div><h3>Social platforms</h3><p class="sub">Visited or used in the last 30 days</p></div><div id="cSocial"></div><div class="sowhat" id="swSocial"></div></div>
-      <div class="card s4"><div><h3>Audio</h3><p class="sub">Listened in the last 30 days</p></div><div id="cAudio"></div></div>
-      <div class="card s4"><div><h3>Audio dayparts</h3><p class="sub">Share listening to any radio or audio</p></div><div id="cAudioDay"></div></div>
-      <div class="card s4"><div><h3>Most-trusted medium</h3><p class="sub">The one medium they trust most</p></div><div id="cTrust"></div></div>
-      <div class="card s6"><div><h3>Search engines</h3><p class="sub">Used in the last 30 days</p></div><div id="cSearch"></div></div>
-      <div class="card s6"><div><h3>TV setup at home</h3><p class="sub">Devices and services in the household</p></div><div id="cDevices"></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- 03 PSYCHOGRAPHICS -->
-<section class="chap" id="psychographics">
-  <div class="wrap">
-    <div class="chap-head">
-      <div><span class="chap-num">04 · Psychographics</span><h2>Retirement planners who make sure they're covered</h2></div>
-      <p>Attitudes chosen for what Lighthouse sells: turning a policy or a house into cash. Each dot is the audience's index for agreeing completely with the statement; the further right of the 100 line, the more distinctive. Hover a row for the share who agree. Try the <b>Bought from a mail offer</b> lens: that audience reads very differently.</p>
-    </div>
-    <div class="grid g12">
-      <div class="card s7"><div class="card-h"><div><h3>Money attitudes</h3><p class="sub">Share who agree completely</p></div></div><div id="dFin"></div></div>
-      <div class="card s5" style="gap:18px">
-        <div><h3>Life events ahead</h3><p class="sub">"Very likely" in MRI's intentions battery</p></div><div id="dIntent"></div>
-        <div class="sowhat" id="swIntent"></div>
-      </div>
-      <div class="card s7"><div><h3>Values, family and home</h3><p class="sub">Share who agree completely</p></div><div id="dGen"></div></div>
-      <div class="card s5" style="gap:18px">
-        <div><h3>Who they turn to</h3><p class="sub">Used for financial services or advice, last 12 months</p></div><div id="cAdvice"></div>
-        <div><h3 style="font-size:14px">Who turns to them</h3><p class="sub">MRI Category Influentials: people others go to for advice</p></div><div id="cInfl"></div>
-      </div>
-      <div class="card s12"><div class="card-h"><div><h3>How they feel about advertising</h3><p class="sub">Share who agree completely</p></div></div><div id="dAd"></div><div class="sowhat" id="swAd"></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- 04 PERSONAS -->
-<section class="chap cream" id="personas">
-  <div class="wrap">
-    <div class="chap-head">
-      <div><span class="chap-num">05 · Personas</span><h2>Six people we can reach without targeting age</h2></div>
-      <p>Three per door. Each persona is built on one MRI audience cut and only uses traits that index 120+ with a usable sample. The stats are live: they read from the persona's own cut, not the lens selected above.</p>
-    </div>
-    <div class="tabs" role="tablist" aria-label="Door">
-      <button class="tab" role="tab" aria-selected="true" data-door="life" id="tabLife"><span class="dot life" style="width:10px;height:10px;border-radius:50%"></span>Life door personas</button>
-      <button class="tab" role="tab" aria-selected="false" data-door="home" id="tabHome"><span class="dot home" style="width:10px;height:10px;border-radius:50%"></span>Home door personas</button>
-    </div>
-    <div class="personas" id="pGrid" role="tabpanel"></div>
-  </div>
-</section>
-
-<!-- 05 DAY IN THE LIFE -->
-<section class="chap alt" id="day">
-  <div class="wrap">
-    <div class="chap-head">
-      <div><span class="chap-num">06 · A day in the life</span><h2>Where each persona is, hour by hour, and where an ad can meet them</h2></div>
-      <p>Built from MRI's "yesterday" activity diary for each persona's audience cut. The timeline picks the hours where the persona over-indexes; the grid underneath shows the whole day.</p>
-    </div>
-    <div class="pick" id="dPick" role="group" aria-label="Choose a persona"></div>
-    <div class="day">
-      <aside class="day-who" id="dWho"></aside>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr);gap:22px;min-width:0">
-        <div class="tl" id="dTl"></div>
-        <div class="card"><div class="card-h"><div><h3>The full day</h3><p class="sub">Index vs. U.S. adults for each activity by hour. Hover a cell for the share doing it. Blank cells have too few respondents to read.</p></div></div>
-          <div class="heat-key"><span>Under-index</span><span class="g"></span><span>Over-index</span><span>(100 = U.S. adults)</span></div>
-          <div class="heat-wrap"><table class="heat dayheat" id="dHeat"></table></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 07 BUYABLE -->
+<!-- 01 BUYABLE -->
 <section class="chap cream" id="buyable">
   <div class="wrap">
     <div class="chap-head">
-      <div><span class="chap-num">07 · Making it buyable</span><h2>What we can actually set in each platform</h2></div>
-      <p>This is the second pass on the audience work. We start from what each platform lets us target, then go back into MRI for traits that fit those settings. Meta and Google won't let us target age on either door, so we target the life they've built: their advisers, their giving, their home projects.</p>
+      <div><span class="chap-num">01 · Making it buyable</span><h2>What we can actually set in each platform</h2></div>
+      <p>Start here if you are planning or buying. We begin with what each platform lets us target, then go back into MRI for traits that fit those settings. The chapters after this one show the audience in full. Meta and Google won't let us target age on either door, so we target the life they've built: their advisers, their giving, their home projects.</p>
     </div>
     <div class="buy-top">
       <div class="tabs" role="tablist" aria-label="Door">
@@ -731,6 +586,151 @@ footer .wrap{display:grid;gap:10px}
     <div class="buy-blk">
       <div class="buy-h"><span class="buy-n">7</span><div><h3>What needs sign-off before we buy</h3></div></div>
       <ol class="signoff" id="bSign"></ol>
+    </div>
+  </div>
+</section>
+
+<!-- 01 DEMOGRAPHICS -->
+<section class="chap" id="demographics">
+  <div class="wrap">
+    <div class="chap-head">
+      <div><span class="chap-num">02 · Demographics</span><h2>Mid-life to retirement, settled and better off than average</h2></div>
+      <p id="demoLede"></p>
+    </div>
+    <div class="grid g12">
+      <div class="card s6" data-demo="cAge"><div class="card-h"><div><h3>Age</h3><p class="sub"></p></div></div><div id="cAge"></div></div>
+      <div class="card s6" data-demo="cHhi"><div class="card-h"><div><h3>Household income</h3><p class="sub"></p></div></div><div id="cHhi"></div></div>
+      <div class="card s6" data-demo="cNw"><div class="card-h"><div><h3>Household net worth</h3><p class="sub"></p></div></div><div id="cNw"></div></div>
+      <div class="card s6" data-demo="cFace"><div class="card-h"><div><h3>Total life-insurance coverage</h3><p class="sub"></p></div></div><div id="cFace"></div><div class="sowhat" id="swFace"></div></div>
+      <div class="card s6" data-demo="cTiles"><div class="card-h"><div><h3>Life stage at a glance</h3><p class="sub"></p></div></div><div id="cTiles"></div></div>
+      <div class="card s6" data-demo="cRegion,cCounty"><div class="card-h"><div><h3>Where they live</h3><p class="sub"></p></div></div><div id="cRegion"></div><h4 class="note" style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin-top:4px">County size</h4><div id="cCounty"></div></div>
+      <div class="card s6" data-demo="cGender"><div class="card-h"><div><h3>Gender</h3><p class="sub"></p></div></div><div id="cGender"></div></div>
+      <div class="card s6" data-demo="cHome"><div class="card-h"><div><h3>Value of owned home</h3><p class="sub"></p></div></div><div id="cHome"></div></div>
+      <div class="card s12"><div class="card-h"><div><h3>Each product has its own footprint</h3><p class="sub">From Lighthouse's RFP Q&amp;A (Q8), not MRI. Plan each product against its own state list.</p></div></div>
+        <div class="grid g3">
+          <div class="so"><b>Life settlements · Life door</b>43 states, about 90% of the U.S. population. Excluded: AK, KS, NE, NH, ND, VT, WV. On-target lead: insured 65+ with $250K+ face value.</div>
+          <div class="so"><b>Home equity investment · both doors</b>22 jurisdictions, about 163M people. No minimum age; qualifies on home value, equity, 680+ credit and a $70K minimum investment.</div>
+          <div class="so"><b>Proprietary reverse mortgage · Home door</b>Florida and Arizona at launch (about 9% of the population), California next. Age 55+, enough equity for a $300K–$400K loan. FHA/HECM (62+) carries no paid media at launch.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 GEOGRAPHY -->
+<section class="chap geo" id="geography">
+  <div class="wrap">
+    <div class="chap-head">
+      <div><span class="chap-num">03 · Geography</span><h2>Where both doors over-index at once</h2></div>
+      <p id="geoLede">Each state is colored by two indexes at once: the Life door cut across, the Home door cut up. Switch either cut in the bar at the top; any of the 11 audience cuts works. Hover a state for the numbers, click it to pin it, and hover a legend square to find every state in that box.</p>
+    </div>
+    <div class="geo-ctrl">
+      <div class="seg dark" role="group" aria-label="Map view" id="gMode"><button aria-pressed="true" data-v="both">Both doors</button><button aria-pressed="false" data-v="life">Life door only</button><button aria-pressed="false" data-v="home">Home door only</button></div>
+      <div class="seg dark" role="group" aria-label="Geography level" id="gLevel"><button aria-pressed="true" data-v="group">MRI state groups (steadier)</button><button aria-pressed="false" data-v="state">Individual states</button></div>
+      <label class="geo-sel" for="gFoot">Product footprint
+        <select id="gFoot"><option value="all">All states</option><option value="ls">Life settlement: 43 states</option><option value="hei">Home equity investment: 22 jurisdictions</option><option value="prm">Proprietary reverse mortgage: FL + AZ</option></select></label>
+    </div>
+    <div class="geo-grid">
+      <div class="geo-map">
+        <svg id="gMap" viewBox="0 0 975 610" role="img" aria-label="U.S. map of audience indexes by state"></svg>
+        <p class="geo-note" id="gNote"></p>
+      </div>
+      <aside class="geo-side">
+        <div class="gcard" id="gLegend"></div>
+        <div class="gcard" id="gDetail"></div>
+      </aside>
+    </div>
+    <div class="geo-ranks" id="gRanks"></div>
+  </div>
+</section>
+
+<!-- 03 MEDIA -->
+<section class="chap alt" id="media">
+  <div class="wrap">
+    <div class="chap-head">
+      <div><span class="chap-num">04 · Media usage</span><h2>Evening TV carries them; heavy social use doesn't</h2></div>
+      <p id="mediaLede"></p>
+    </div>
+    <div class="grid g12">
+      <div class="card s12">
+        <div class="card-h"><div><h3>Media quintiles</h3><p class="sub">U.S. adults are ranked by time spent with each medium and split into fifths (I = heaviest 20%). Cells show each audience's index in that fifth. Daytime TV is split into thirds.</p></div></div>
+        <div class="heat-key"><span>Under-index</span><span class="g"></span><span>Over-index</span><span>(100 = U.S. adults)</span></div>
+        <div class="grid g2"><div class="heat-wrap"><div class="rank-h"><span class="dot life" style="width:10px;height:10px;border-radius:50%"></span><span id="qLifeName"></span></div><table class="heat" id="qLife"></table></div>
+          <div class="heat-wrap"><div class="rank-h"><span class="dot home" style="width:10px;height:10px;border-radius:50%"></span><span id="qHomeName"></span></div><table class="heat" id="qHome"></table></div></div>
+        <div class="sowhat" id="swQuint"></div>
+      </div>
+      <div class="card s7"><div class="card-h"><div><h3>When they watch TV</h3><p class="sub">Share watching TV in each weekday daypart (Eastern/Pacific times)</p></div></div><div id="cDay"></div><div class="sowhat" id="swDay"></div></div>
+      <div class="card s5"><div><h3>Live or on demand</h3><p class="sub">How they mostly watch TV in a typical week</p></div><div id="cLive"></div><div><h3 style="font-size:14px;margin-top:6px">Weekend TV</h3><p class="sub">Share watching in each weekend daypart</p></div><div id="cWknd"></div></div>
+      <div class="card s12">
+        <div class="card-h"><div><h3>TV networks they over-index on</h3><p class="sub">Watched in the last 7 days. Networks reaching at least 8% of the audience with 50+ respondents.</p></div>
+          <div class="seg" role="group" aria-label="Rank networks by"><button aria-pressed="true" data-rk="idx">Rank by index</button><button aria-pressed="false" data-rk="vp">Rank by reach</button></div></div>
+        <div class="grid g2"><div class="life"><div class="rank-h"><span class="dot life" style="width:10px;height:10px;border-radius:50%"></span>Life door</div><div class="rank" id="rnLife"></div></div><div class="home"><div class="rank-h"><span class="dot home" style="width:10px;height:10px;border-radius:50%"></span>Home door</div><div class="rank" id="rnHome"></div></div></div>
+      </div>
+      <div class="card s6"><div><h3>Streaming services</h3><p class="sub">Watched in the last 30 days. FAST = free ad-supported streaming.</p></div><div id="cStream"></div></div>
+      <div class="card s6"><div><h3>Social platforms</h3><p class="sub">Visited or used in the last 30 days</p></div><div id="cSocial"></div><div class="sowhat" id="swSocial"></div></div>
+      <div class="card s4"><div><h3>Audio</h3><p class="sub">Listened in the last 30 days</p></div><div id="cAudio"></div></div>
+      <div class="card s4"><div><h3>Audio dayparts</h3><p class="sub">Share listening to any radio or audio</p></div><div id="cAudioDay"></div></div>
+      <div class="card s4"><div><h3>Most-trusted medium</h3><p class="sub">The one medium they trust most</p></div><div id="cTrust"></div></div>
+      <div class="card s6"><div><h3>Search engines</h3><p class="sub">Used in the last 30 days</p></div><div id="cSearch"></div></div>
+      <div class="card s6"><div><h3>TV setup at home</h3><p class="sub">Devices and services in the household</p></div><div id="cDevices"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 PSYCHOGRAPHICS -->
+<section class="chap" id="psychographics">
+  <div class="wrap">
+    <div class="chap-head">
+      <div><span class="chap-num">05 · Psychographics</span><h2>Retirement planners who make sure they're covered</h2></div>
+      <p>Attitudes chosen for what Lighthouse sells: turning a policy or a house into cash. Each dot is the audience's index for agreeing completely with the statement; the further right of the 100 line, the more distinctive. Hover a row for the share who agree. Try the <b>Bought from a mail offer</b> lens: that audience reads very differently.</p>
+    </div>
+    <div class="grid g12">
+      <div class="card s7"><div class="card-h"><div><h3>Money attitudes</h3><p class="sub">Share who agree completely</p></div></div><div id="dFin"></div></div>
+      <div class="card s5" style="gap:18px">
+        <div><h3>Life events ahead</h3><p class="sub">"Very likely" in MRI's intentions battery</p></div><div id="dIntent"></div>
+        <div class="sowhat" id="swIntent"></div>
+      </div>
+      <div class="card s7"><div><h3>Values, family and home</h3><p class="sub">Share who agree completely</p></div><div id="dGen"></div></div>
+      <div class="card s5" style="gap:18px">
+        <div><h3>Who they turn to</h3><p class="sub">Used for financial services or advice, last 12 months</p></div><div id="cAdvice"></div>
+        <div><h3 style="font-size:14px">Who turns to them</h3><p class="sub">MRI Category Influentials: people others go to for advice</p></div><div id="cInfl"></div>
+      </div>
+      <div class="card s12"><div class="card-h"><div><h3>How they feel about advertising</h3><p class="sub">Share who agree completely</p></div></div><div id="dAd"></div><div class="sowhat" id="swAd"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 PERSONAS -->
+<section class="chap cream" id="personas">
+  <div class="wrap">
+    <div class="chap-head">
+      <div><span class="chap-num">06 · Personas</span><h2>Six people we can reach without targeting age</h2></div>
+      <p>Three per door. Each persona is built on one MRI audience cut and only uses traits that index 120+ with a usable sample. The stats are live: they read from the persona's own cut, not the lens selected above.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Door">
+      <button class="tab" role="tab" aria-selected="true" data-door="life" id="tabLife"><span class="dot life" style="width:10px;height:10px;border-radius:50%"></span>Life door personas</button>
+      <button class="tab" role="tab" aria-selected="false" data-door="home" id="tabHome"><span class="dot home" style="width:10px;height:10px;border-radius:50%"></span>Home door personas</button>
+    </div>
+    <div class="personas" id="pGrid" role="tabpanel"></div>
+  </div>
+</section>
+
+<!-- 05 DAY IN THE LIFE -->
+<section class="chap alt" id="day">
+  <div class="wrap">
+    <div class="chap-head">
+      <div><span class="chap-num">07 · A day in the life</span><h2>Where each persona is, hour by hour, and where an ad can meet them</h2></div>
+      <p>Built from MRI's "yesterday" activity diary for each persona's audience cut. The timeline picks the hours where the persona over-indexes; the grid underneath shows the whole day.</p>
+    </div>
+    <div class="pick" id="dPick" role="group" aria-label="Choose a persona"></div>
+    <div class="day">
+      <aside class="day-who" id="dWho"></aside>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr);gap:22px;min-width:0">
+        <div class="tl" id="dTl"></div>
+        <div class="card"><div class="card-h"><div><h3>The full day</h3><p class="sub">Index vs. U.S. adults for each activity by hour. Hover a cell for the share doing it. Blank cells have too few respondents to read.</p></div></div>
+          <div class="heat-key"><span>Under-index</span><span class="g"></span><span>Over-index</span><span>(100 = U.S. adults)</span></div>
+          <div class="heat-wrap"><table class="heat dayheat" id="dHeat"></table></div></div>
+      </div>
     </div>
   </div>
 </section>
